@@ -9,8 +9,17 @@
   --services-font-cl: rgba(47, 48, 58, 0.8);
   --main-font-color: #212121; /* основний колір тексту */
   --secondary-font-color: #757575;
+  --form-font-color: rgba(255, 255, 255, 0.6); /* колір е-майл в футері */
+  --border-form-color: rgba(255, 255, 255, 0.3);
   --section-color: #f5f4fa; /*  цвет секції наша команда */
   --icon-color: #afb1b8; /* колір іконок в неактивному стані */
+  --border-color: rgba(33, 33, 33, 0.2); /* колір бордерів форми на модальному вікні */
+  --comment-font-color: rgba(
+    117,
+    117,
+    117,
+    0.5
+  ); /* колір плейсхолдера в коментрях в модальному вікні */
   --logo-font: 'Raleway', sans-serif;
   --main-font: 'Roboto', sans-serif;
 }
@@ -719,7 +728,8 @@ img {
   display: flex;
   align-items: baseline;
 }
-.footer-title {
+.footer-title,
+.footer-mail-title {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -754,4 +764,107 @@ img {
 .footer-social-list {
   display: flex;
   gap: 10px;
+}
+.footer-social-container {
+  margin-right: 93px;
+}
+/* ---------------form modal window ------------------*/
+.form {
+  width: 448px;
+  height: 342px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+.form-field:nth-last-child(n) {
+  margin-bottom: 10px;
+}
+.form-field label {
+  color: var(--secondary-font-color);
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+
+  margin-bottom: 4px;
+}
+.form-field input {
+  margin: 0;
+  padding: 11px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+.conditions {
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-font-color);
+}
+.conditions-link {
+  color: var(--accent-color);
+}
+.comment-field {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+textarea {
+  resize: none;
+
+  height: 120px;
+  border: none;
+  padding: 12px 16px;
+
+  color: var(--comment-font-color);
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+}
+
+.footer-form {
+  margin: right 12px;
+}
+
+.footer-form-btn {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-form-btn input {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  padding-left: 16px;
+}
+.footer-email {
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.footer-btn {
+  background-color: var(--accent-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--additional-font-color);
+
+  padding: 10px 28px;
 }
