@@ -302,6 +302,7 @@ img {
   top: 50%;
   left: 50%;
 
+  padding: 40px;
   min-width: 528px;
   min-height: 581px;
 
@@ -320,9 +321,8 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-font-color);
-
-  padding: 0 40px;
-  margin-top: 40px;
+  /* padding: 0 40px; */
+  /* margin-top: 40px; */
   margin-bottom: 12px;
 }
 .modal-btn-icon {
@@ -384,6 +384,7 @@ img {
 }
 
 .form-field {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -400,9 +401,37 @@ img {
 }
 .form-field input {
   margin: 0;
-  padding: 11px 12px;
+  padding: 11px 42px 12px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
+}
+/* .input-field:hover,
+.input-field:focus,
+.input-field:active, */
+.form-input:hover,
+.form-input:focus,
+.form-input:active {
+  border: none;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+.form-input {
+  border: none;
+  position: relative;
+}
+.input-field {
+  width: 100%;
+}
+.form-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+}
+
+.form-icon:hover,
+.form-icon:focus,
+.form-icon:active {
+  fill: currentColor;
 }
 .conditions-field {
   flex-direction: row;
