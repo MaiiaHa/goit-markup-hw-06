@@ -75,8 +75,8 @@
                   <use href="./images/icons.svg#icon-close-btn"></use>
                 </svg>
               </button>
-              <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
 
+              <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
               <form class="form">
                 <div class="form-field">
                   <label for="name">Ім'я</label>
@@ -101,16 +101,16 @@
                   ></textarea>
                 </div>
 
-                <div class="form-field conditions">
+                <div class="form-field conditions-field">
                   <input type="checkbox" name="conditions" value="conditions" id="conditions" />
                   <label for="conditions"
                     >Погоджуюся з розсилкою та приймаю
                     <a class="conditions-link" href="">Умови договору</a>
                   </label>
                 </div>
-              </form>
 
-              <button class="modal-btn btn" data-modal-close>Відправити</button>
+                <button class="modal-btn btn" data-modal-close>Відправити</button>
+              </form>
             </div>
           </div>
 
@@ -453,7 +453,6 @@
         <div class="footer-mail-container">
           <p class="footer-mail-title">Підпишіться на розсилку</p>
           <form class="footer-form">
-            <!-- <label for="mail">E-mail</label> -->
             <div class="footer-form-btn">
               <input
                 class="footer-email"
@@ -461,8 +460,14 @@
                 name="email"
                 id="mail"
                 placeholder="E-mail"
+                required
               />
-              <button class="footer-btn btn" type="submit">Підписатися</button>
+              <button class="footer-btn btn" type="submit">
+                Підписатися
+                <svg class="footer-mail-btn" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
             </div>
           </form>
         </div>
