@@ -92,26 +92,6 @@ img {
   color: var(--accent-color);
 }
 
-/* ____________________плавні переходи hover________________ */
-/* .logo,
-.header-nav-link,
-.header-link,
-.footer-logo,
-.footer-link,
-.address-link,
-.main-btn,
-.modal-btn,
-.works-btn,
-.works-link,
-.social-link,
-.footer-social-link,
-.clients-link {
-  transition-property: color, fill, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} */
-/* ____________________плавні переходи hover_________________ */
-
 .link {
   text-decoration: none; /* прибирає підкреслення посилань. Звичайний текст. */
 }
